@@ -1,0 +1,183 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	font-family: 'Roboto', 'Arial', sans-serif
+	color: $text
+	background: #f4f4f4
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.main-container
+ padding-left: 20vw
+ padding-right: 20vw
+
+.main-header
+	margin-top: 60px
+	display: flex
+	justify-content: space-between
+	margin-bottom: 100px
+	&-menu
+		font-size: 28px
+
+.main-page
+	h1 
+		display: inline-block
+		font-weight: 100
+		font-size: 48px
+		width: 40vw
+		line-height: 130%
+		margin-bottom: 80px
+
+hr 
+	border: 0.5px solid #d9d9d9
+
+.about-me
+	h2 
+		margin-top: 50px	
+		margin-bottom: 30px
+		font-size: 24px
+		font-weight: 400
+	img 
+		margin-bottom: 40px
+	ul 
+		justify-content: center
+		list-style-type: none
+		display: flex
+		margin: 0
+		padding: 0
+		margin-bottom: 100px
+		li 
+			margin-right: 20px
+			margin-left: 20px
+	p
+		margin: 0 auto
+		padding-left: 10vw
+		padding-right: 10vw
+		font-weight: 300
+		line-height: 1.3
+		margin-bottom: 40px
+	span 
+		display: none
+	i 
+		font-size: 36px
+		color: #9d9d9d
+
+.mix
+	& > a > img 
+		width: 100%
+		transition: all 0.5s
+		&:hover
+			width: 90%
+			padding-left: 5%
+			padding-top: 5%
+	p,h3 
+		display: block
+		margin: 0 auto
+		padding: 0
+		text-align: center
+	p 
+		font-weight: 300
+		margin-top: 20px
+		font-size: 14px
+		color: $text
+	h3 
+		font-size: 24px
+		color: $text
+
+.controls
+	margin-bottom: 25px
+	a 
+		display: inline-block
+		margin-bottom: 20px
+
+.control
+		cursor: pointer
+		text-decoration: none
+		text-transform: uppercase
+		letter-spacing: 2px
+		color: #4b4b4b
+		margin-right: 25px
+		padding-bottom: 2px
+		&:hover
+			border-bottom: 1px solid #000
+
+// Внутренние страницы
+
+.inner-page
+	h1 
+		font-weight: 300
+		display: inline-block
+		font-weight: 100
+		font-size: 48px
+		width: 40vw
+		line-height: 130%
+		margin-bottom: 80px
+	ul 
+		justify-content: center
+		list-style-type: none
+		display: flex
+		margin: 0
+		padding: 0
+		margin-bottom: 100px
+		li 
+			margin-right: 20px
+			margin-left: 20px	
+		span 
+			display: none
+		i 
+			font-size: 36px
+			color: #9d9d9d	
+
+.back-to-main
+	display: block
+	text-align: center
+	text-decoration: none
+	color: $text
+	font-size: 18px
+	font-weight: 300
+	margin-bottom: 100px
+	&:hover
+		text-decoration: underline
+
+.photo-1,.photo-2,.photo-3
+	display: grid
+	grid-template-columns: minmax(420px, 2fr) 1fr
+	grdid-template-columns: repeat(auto-fill, 400px, 1fr)
+	grid-gap: 30px
+	align-items: center
+	margin-bottom: 60px
+
+
+@import "media" // Always at the end

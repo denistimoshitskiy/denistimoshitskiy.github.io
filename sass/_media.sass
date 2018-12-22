@@ -1,0 +1,43 @@
+@import "vars"
+
+@media (max-width: 320px)
+	.main-container,.inner-page
+		padding-left: 0.5vw
+		padding-right: 0.5vw
+		h1 
+			font-size: 24px
+			text-align: center
+			width: 100vw !important
+		.controls 
+			text-align: center
+
+@media (max-width: 425px)
+	.controls
+		text-align: center
+	.main-header
+		margin-bottom: 50px
+	.main-container
+		h1 
+			font-size: 24px
+			width: 80vw
+			
+
+@media (max-width: 768px)
+	.controls
+		text-align: center
+	.photo-1,.photo-2,.photo-3
+		display: flex
+		flex-wrap: wrap
+
+@media (max-width: 1200px)
+	.main-container
+		padding-left: 5vw
+		padding-right: 5vw
+	.portfolio
+		&-item
+			width: 300px
+
+@media (max-width: 1400px)
+	.main-container
+		padding-left: 10vw
+		padding-right: 10vw
