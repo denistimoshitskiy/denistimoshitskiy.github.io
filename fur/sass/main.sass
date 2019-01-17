@@ -1,0 +1,175 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Montserrat', 'Arial' sans-serif
+	overflow-x: hidden
+	color: black
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.main-header
+	height: 80px
+	background-color: $accent
+
+.logo
+	margin-top: 10px
+
+.main-nav-list
+	list-style-type: none
+	margin: 0
+	padding: 0
+	display: flex
+	align-items: center
+	height: 80px
+	font-size: 14px
+	li 
+		margin-right: 40px
+		a 
+			color: #c4c4c4
+			&:hover
+				color: white
+				text-decoration: none
+				transition: all 0.5s
+
+.mobile-nav
+	display: none	
+
+.first-screen
+	background-image: url(../img/fs.png)
+	background-repeat: no-repeat
+	height: 100%
+	padding-top: 95px
+	padding-bottom: 95px
+
+.white-logo
+	display: block
+	margin: 0 auto
+	margin-bottom: 220px
+	
+.main-page
+	h1 
+		display: none
+	h2 
+		font-family: 'Playfair Display', serif
+		font-weight: normal
+		font-size: 36px
+		text-align: center
+		color: white
+		padding: 0
+		margin: 0
+		margin-bottom: 30px
+
+.button
+	padding-top: 20px
+	padding-bottom: 20px
+	padding-left: 40px
+	padding-right: 40px
+	background-color: $accent
+	display: block
+	width: 170px
+	margin: 0 auto
+	text-transform: uppercase
+	letter-spacing: 4px
+	color: white
+	font-weight: 500
+	font-size: 14px
+	&:hover
+		text-decoration: none
+		background-color: white
+		color: $accent
+		transition: all 0.5s
+
+.categories
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	width: 100vw
+	&-item
+		width: 25vw
+		img 
+			width: 100%
+	h3 
+		text-align: center
+		background-color: #303030
+		color: white
+		font-weight: 300
+		font-size: 21px
+		padding-top: 10px
+		padding-bottom: 10px
+		margin: 0
+
+
+
+
+// Меню гамбургер
+
+.ham 
+  cursor: pointer
+  -webkit-tap-highlight-color: transparent
+  transition: transform 400ms
+  -moz-user-select: none
+  -webkit-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.hamRotate.active 
+  transform: rotate(45deg)
+
+.hamRotate180.active 
+  transform: rotate(180deg)
+
+.line 
+  fill: none
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms
+  stroke: white
+  stroke-width: 5.5
+  stroke-linecap: round
+
+.ham1 .top 
+  stroke-dasharray: 40 139
+
+.ham1 .bottom 
+  stroke-dasharray: 40 180
+
+.ham1.active .top 
+	stroke-dashoffset: -98px
+
+.ham1.active .bottom 
+	stroke-dashoffset: -138px
+
+
+
+
+
+@import "media" // Always at the end
