@@ -104,17 +104,20 @@ b, strong
 	color: white
 	font-weight: 500
 	font-size: 14px
+	border: 1px solid $accent
 	&:hover
 		text-decoration: none
 		background-color: white
 		color: $accent
 		transition: all 0.5s
+		border: 1px solid #dedede
 
 .categories
 	display: flex
 	flex-wrap: wrap
 	justify-content: center
 	width: 100vw
+	margin-bottom: 50px
 	&-item
 		width: 25vw
 		img 
@@ -129,8 +132,208 @@ b, strong
 		padding-bottom: 10px
 		margin: 0
 
+.popularity-goods
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-bottom: 50px
+	h4 
+		padding: 0
+		margin: 0
+		margin-bottom: 20px
+		margin-top: 10px
+		font-weight: 400
+		color: black
+
+.goods-description
+	display: flex
+	justify-content: space-between
+	p 
+		padding: 0
+		margin: 0
+		margin-bottom: 20px
+		margin-top: 10px
+		font-weight: 600
+		color: black
+
+.main-footer
+	background-color: $accent
+	color: #c4c4c4
+	padding-top: 70px
+	padding-bottom: 20px
+	ul 
+		list-style-type: none
+		display: flex
+		margin: 0
+		padding: 0
+		justify-content: center
+	p 
+		padding: 0
+		margin: 0
+		text-align: center
+		font-size: 14px
+		font-weight: 300
+	span 
+		display: none	
+
+.contacts
+	font-size: 18px
+	&-list 
+		flex-wrap: wrap
+		text-align: center
+		li 
+			margin-left: 25px
+			margin-right: 25px
+			margin-bottom: 30px
+
+.links
+	margin-bottom: 30px
+	li 
+		margin-right: 20px
+		margin-left: 20px
+	a 
+		color: white
+		font-size: 14px
+		color: #c4c4c4
+		&:hover
+			color: white
+			text-decoration: none
+			transition: all 0.5s
+
+.fab
+	font-size: 36px
+	margin-right: 25px
+	margin-left: 25px
+	margin-bottom: 50px
+	color: #c4c4c4
+	&:hover
+		color: white
+		text-decoration: none
+		transition: all 0.5s
+
+.breadcrumbs-list
+	display: flex
+	list-style-type: none
+	padding: 0
+	margin: 0
+	margin-top: 50px
+	margin-bottom: 25px
+	font-size: 14px
+	flex-wrap: wrap
+	li 
+		margin-right: 35px
+		position: relative
+		margin-bottom: 25px
+		&::after
+			content: ''
+			width: 5px
+			height: 8px
+			background-image: url(../img/breadcrumbs.png)
+			position: absolute
+			top: 7px
+			right: -20px
+		&:last-child::after
+			display: none	
+	a 
+		color: black
+
+.inner-page
+	h1 
+		text-align: center
+		margin-bottom: 60px
+	.popularity-goods
+		margin-bottom: 100px	
+
+.catalog
+	margin-bottom: 50px
+	h2
+		text-align: center
+		background-color: #303030
+		color: white
+		font-weight: 300
+		font-size: 21px
+		padding-top: 10px
+		padding-bottom: 10px
+		margin: 0
+	img 
+		width: 100%
+	p 
+		margin-top: 100px
+		margin-bottom: 60px
+	&-item 
+		madrgin-bottom: 60px
+		position: relative
+		&::after
+			content: ''
+			width: 1px
+			height: 100%
+			position: absolute
+			background-color: #dedede
+			left: 50%
+
+.catalog-image
+	margin-bottom: 60px
+
+.delivery
+	margin-bottom: 50px
+	img 
+		width: inherit
+
+.product-page
+	h1 
+		margin: 0
+		padding: 0
+		font-size: 24px
+		font-weight: 600
+		margin-bottom: 30px
+
+.card
+	margin-bottom: 50px
+
+.availability
+	font-size: 18px
+	text-transform: uppercase
+	margin-bottom: 25px
+
+.card-description
+	font-size: 14px
+	margin-bottom: 30px			
+
+.price
+	font-size: 24px
+	font-weight: 600
+	display: inline-block
+	margin-right: 80px
+
+.buy
+	display: inline-block
+
+.table-description
+	font-size: 14px
+	margin-bottom: 40px 
+
+.feature
+	text-transform: uppercase
+	font-weight: 600
 
 
+// Галерея продукта
+
+.gallery__hero
+	width: 350px
+	height: 450px
+	img 
+		width: 100%
+
+.gallery__thumbs
+	a 
+		width: 65px
+		height: 80px
+		text-decoration: none
+		display: block
+	img 
+		width: inherit
+    
 
 // Меню гамбургер
 

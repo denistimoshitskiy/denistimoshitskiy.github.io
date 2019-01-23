@@ -5,12 +5,29 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	.popularity-goods
+		a:nth-child(8)
+			display: none
+		a:nth-child(7)
+			display: none
+	.catalog
+		p 
+			margin-top: 0		
 
 // ≥992px
 +media-breakpoint-down(md)
 	.categories
 		&-item
 			width: 50vw
+	.catalog
+		p 
+			margin-top: 0
+
+	.gallery__thumbs
+		margin: 0 auto
+		margin-bottom: 30px
+		a 
+			display: inline-block		
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -44,6 +61,16 @@
 		&-item
 			width: 100vw	
 
+	.catalog-item 
+		&::after
+			display: none
+
+	.right
+		order: 2
+
+	.price
+		margin-right: 50px
+			
 /*==========  Mobile First  ==========*/
 
 // ≤576px
